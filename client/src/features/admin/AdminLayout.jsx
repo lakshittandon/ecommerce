@@ -13,7 +13,7 @@ export default function AdminLayout() {
       </aside>
 
       <section className="admin-main">
-        <Outlet />   {/* nested routes render here */}
+        <Outlet />   {/* nested routess render here */}
       </section>
     </div>
   );
