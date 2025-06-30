@@ -1,0 +1,58 @@
+/* Wrap table to allow horizontal scroll on narrow screens */
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--clr-white);
+  padding: var(--gap);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgba(102, 138, 70, 0.1);
+}
+
+/* Existing table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--clr-light);
+}
+.table th {
+  background: var(--clr-light);
+  font-weight: 600;
+}
+
+/* “New product” button styling */
+.newBtn {
+  background: #f9c74f; 
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  margin-bottom: var(--gap);
+  cursor: pointer;
+  border: 1px solid var(--clr-primary);
+  transition: background 0.2s, color 0.2s;
+}
+.newBtn:hover {
+  background: var(--clr-white);
+  color: var(--clr-primary);
+}
+
+/* Pagination controls */
+.pager {
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+  margin-top: var(--gap);
+}
+.pager button {
+  background: #f9c74f; 
+  color: var(--clr-white);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+}
+.pager span {
+  font-weight: 500;
+}

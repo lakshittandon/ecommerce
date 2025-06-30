@@ -1,0 +1,16 @@
+/* --- CSS reset (very small) --- */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Roboto,Arial,sans-serif;line-height:1.5;background:#f9f9f9;color:#333}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+/* --- CSS custom properties --- */
+:root{
+  --clr-primary:#222;
+  --clr-secondary:#555;
+  --radius:4px;
+}
+
+/* Utility: a simple container */
+.container{width:min(1200px,90%);margin-inline:auto}
+

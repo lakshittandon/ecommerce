@@ -1,0 +1,44 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.imageWrap img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  background: var(--clr-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.btn:disabled {
+  opacity: 0.6;
+}
+.reviewSection, .reviewList {
+  margin-top: 2rem;
+}
+.starInput {
+  font-size: 1.5rem;
+}
+.filled { color: #f5a623; cursor: pointer; }
+.empty  { color: #ccc; cursor: pointer; }
+.reviewSection textarea {
+  width: 100%; margin: .5rem 0; padding: .5rem;
+}
+.reviewItem { border-bottom: 1px solid #eee; padding: .75rem 0; }

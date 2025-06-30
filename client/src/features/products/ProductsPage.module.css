@@ -1,0 +1,33 @@
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.25rem; margin-top:1.5rem; }
+
+.grid   { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:1rem; }
+.search { width:100%; max-width:320px; margin:1rem 0; padding:.5rem; font-size:1rem; }
+.pager  { margin:1rem 0; display:flex; gap:1rem; align-items:center; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+/* ↓ Collapse to one-column on phones */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.addBtn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  background: var(--clr-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.addBtn:hover {
+  background: #111;
+}
+
+
+/* search + pager are already flex; nothing else to change */

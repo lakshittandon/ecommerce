@@ -1,0 +1,11 @@
+# Node / Vite
+node_modules/
+dist/
+.env
+backend/config/config.env
+client/node_modules/
+client/dist/
+
+# OS / editor
+.DS_Store
+.vscode/
