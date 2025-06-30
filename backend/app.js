@@ -8,7 +8,7 @@ const order = require('./routes/orderRoutes');
 
 app.use(
   cors({
-    origin: "https://ecommerce-frontend-git-main-lakshit-tandons-projects.vercel.app/", // Vite dev server
+    origin: "https://ecommerce-frontend-git-main-lakshit-tandons-projects.vercel.app", // Vite dev server
     credentials: true,               // allow cookies
   })
 );
